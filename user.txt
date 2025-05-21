@@ -1,0 +1,1242 @@
+"cleaned_content"
+"6) invoke-gupdate remotly
+
+Get-ADComputer Filter 'Name -like win7*' -Searchbase ou=test, dc=domr2, dc=com | foreach{ Invoke-GPUpdate Computer $_.name -Force -RandomDelayInMinutes 0}"
+"hey guys in powershell whats wrong with
+
+get-process|where-object {$_.Name like 'Agent*' -and $_.Company like 'Blizzard Entertainment*'}"
+"*running"
+"*class d address"
+"Get-ChildItem -Path $path -Include $include -Recurse -Force -Erroraction SilentlyContinue | select * | select-object -ExpandProperty Fullname FileCreationDate | format-table auto
+
+its dumping filepath but not file creation date"
+"yeah it dosnt seem to like
+select * | select-object -ExpandProperty Fullname,CreationTimeUTC
+
+as ones a string and the other is systemtime"
+"*hours"
+"powershell (Get-WmiObject -query select * from SoftwareLicensingService).OA3xOriginalProductKey"
+"Get-WmiObject -query select * from SoftwareLicensingService on its own tells you everything about the licence"
+"*or the room owner. so you can just add 1 user to run the whole thing if you need lots of distro groups for email"
+"wildcard dns are redirections of *.yourdomain.com to a ip/server of your choice"
+"pretty sure it just works on A* algorithm similar to eigrp"
+"yeah its gonna be smarter than u. unless you work it out using A*"
+"and i am asking because if i was gonna write a* for it would really help if ad servers had some perioid connection whose transmission time they measure."
+"and as for it works a* is so well understood as is spanning tree its not a major change"
+"*i belive"
+"you can debloat window 10 by doing this in powershell damin get-appxpackage * | remove-appxpackage"
+"$package=gci where {Name is *.msi}
+
+for $._(dism /online /allusers $package)"
+"woudlnt that have to be 
+Get-VM * | select-property VMName ,IntergrationSErvicesSate | format-table auto"
+"get-vm * | Get-VMIntegrationService works fine"
+"then you are not working at all that day. but at least you can work if your companies net goes down for a few hours rather than lost the $ of every hour your down*no of empoyees on site"
+"powershell (Get-WmiObject -query select * from SoftwareLicensingService).OA3xOriginalProductKey"
+"Get-ADComputer -Filter *  | Foreach-Object {Invoke-GPUpdate -Computer $_.name -Force -RandomDelayInMinutes 0} of that if your feeling lucky"
+"get-netroute | format-list -property *"
+"i wish they moved to an A* alorothim"
+"*data center"
+"*windows+r"
+"get-wmiobject -class Win32_DiskDrive | fl *"
+"*hole"
+"Get-ADUser -Filter 'Name -like *SvcAccount' | Format-Table Name,SamAccountName -A"
+"*for fun"
+"win 6 would be select * from Win32_OperatingSystem where Version like 6.1% and ProductType = 1"
+"oh and btw `Get-ItemProperty HKLM:\Software\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall\* | Select-Object DisplayName, DisplayVersion, Publisher, InstallDate | Format-Table AutoSize``"
+"*iot"
+"*Dism"
+"id check get-vmfiremware *"
+"*corsair"
+"*5120"
+"*year"
+"dir /S *.wim dosnt return anything on windows pe it appears now"
+"*dism"
+"CMD /c batchFile.bat && set | .{process{
+    if ($_ -match '^([^=]+)=(.*)') {
+        Set-Variable $matches[1] $matches[2]
+    }
+}}"
+"*unetbootin"
+"*deploy update servers"
+"*get-pnpdevice -present"
+"*jedi"
+"*h323"
+"*your companies domain name"
+"*icann"
+"$computers = Get-ADComputer
+$outfile = outfile.xlm
+for $computer in computers {invoke-command (Get-WmiObject -query 'select * from SoftwareLicensingService').OA3xOriginalProductKey |  out-clixml -Name,OA3xOriginalProductKey }
+"
+"*icmp ipv6 baiscaly"
+"*wim though it could be a admin rights issue"
+"New-item -Path c:\ -Name tmp -ItemType directory 
+wget downloadfile -Outfile c:\tmp\out.msi
+wget dwonloadfile -Outfile c:\tmp\out2.msi
+$file1= 'c:\tmp\out.msi
+$file2='c:\tmp\out2.msi
+$DataStamp = get-date -Format yyyyMMddTHHmmss
+$logFile = '{0}-{1}.log' -f $file1.fullname,$DataStamp
+$MSIArguments1 = @(
+    /i
+    ('{0}' -f $file1.fullname)
+    /qn
+    /norestart
+    /L*v
+    $logFile
+)
+$MSIArguments2 = @(
+    /i
+    ('{0}' -f $file2.fullname)
+    /qn
+    /norestart
+    /L*v
+    $logFile
+)
+Start-Process msiexec.exe -ArgumentList $MSIArguments1 -Wait -NoNewWindow 
+Start-Process msiexec.exe -ArgumentList $MSIArguments2 -Wait -NoNewWindow 
+"
+"which is pretty funny as their own test tool hasnt thrown a problem ever
+
+``Testing Connectivity to: [ eu-1.virl.info ==> 173.38.221.75 ]
+Connection to eu-1.virl.info 4505 port [tcp/*] succeeded!
+Connection to eu-1.virl.info 4506 port [tcp/*] succeeded!``"
+"so i got bored and wrote a psscript to download and update elvui for world of warcraft
+its got some code to scrape a website for Hrefs 
+$wowfolder = 'C:\games\Blizzard\World of Warcraft'
+$interfacefolder ='\_retail_\Interface\AddOns\'
+$downloadgrab = ((Invoke-WebRequest -Uri  | Where href -like /downloads/elvui-*.zip).href
+$downloadgrab2 = 
+
+Start-BitsTransfer -Source $downloadgrab2 -Destination ($wowfolder+'\tmp\elvui.zip')
+Expand-Archive -LiteralPath ($wowfolder+'\tmp\elvui.zip' )-DestinationPath ($wowfolder+$interfacefolder) -Force"
+"via `get-appxpackage -Name *onenote*'| remove-Appxpackage -allusers"
+"``
+PS C:\Users\xxxx> Get-AppxPackage -name *microsoft.store*
+
+
+Name              : Microsoft.StorePurchaseApp
+Publisher         : CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US
+Architecture      : X64
+ResourceId        :
+Version           : 11906.1001.16.0
+PackageFullName   : Microsoft.StorePurchaseApp_11906.1001.16.0_x64__8wekyb3d8bbwe
+InstallLocation   : C:\Program Files\WindowsApps\Microsoft.StorePurchaseApp_11906.1001.16.0_x64__8wekyb3d8bbwe
+IsFramework       : False
+PackageFamilyName : Microsoft.StorePurchaseApp_8wekyb3d8bbwe"
+"` Get-AppxPackage -name *microsoft.store*` is the call"
+"the script would probably be
+
+for Get-AADDevice>get-appxpackage -Name *microsoft.office*
+> add to list x
+create group using new-azureADGroup"
+"Get-ADComputer -property * -filter { ipv4address -eq $ComputerIPAddress }"
+"so you can use whatever gateway is avable at their end for 0.0.0.0*"
+"*lost"
+"*of mdt"
+"i mean you could prob regx it to `*anyone here familiar with X?` and less than 100 chariters"
+"With plans for as little as $1.19* a month, business mail is a low-cost way to build trust online. Get analytics, 1 TB of free storage, and more."
+"*sealed"
+"For ($i=0; $i -le 255; $i++) {
+    255 * $i =  + (255 * $i)
+    }"
+"*scales"
+"*besides"
+"*yeah"
+"`remove-appxpackage -name *skype*`"
+"Get-computer -name *"
+"Get-appxpackage * | remove-appxpackage -allusers"
+"*bgp AS"
+"get-vm * | Get-VMHardDiskDrive | format-table auto"
+"try remove the *"
+"Get-VM -Name * | Get-VMHardDiskDrive"
+"* should be an ez rule to do"
+"and just use .* for everything"
+"PowerShell
+[sourcecode language='powershell'  padlinenumbers='true']
+Enable-BitLocker -MountPoint C: -EncryptionMethod XtsAes128 -UsedSpaceOnly -SkipHardwareTest -RecoveryPasswordProtector
+$BLV = Get-BitLockerVolume -MountPoint C: | select *
+BackupToAAD-BitLockerKeyProtector -MountPoint C: -KeyProtectorId $BLV.KeyProtector[1].KeyProtectorId
+[/sourcecode]"
+"get-aduser -identity ^ -Properties * | select-object -Name"
+"`PS C:\> Get-ADUser -Identity ChewDavid -Properties *
+Surname           : David
+Name              : Chew David
+UserPrincipalName : 
+GivenName         : David
+Enabled           : False
+SamAccountName    : ChewDavid
+ObjectClass       : user
+SID               : S-1-5-21-2889043008-4136710315-2444824263-3544
+ObjectGUID        : e1418d64-096c-4cb0-b903-ebb66562d99d
+DistinguishedName : CN=Chew David,OU=NorthAmerica,OU=Sales,OU=UserAccounts,DC=FABRIKAM,DC=COM`"
+"or | where-object like *X*"
+"*policy"
+"$wowfolder = 'C:\games\Blizzard\World of Warcraft'
+$interfacefolder ='\_retail_\Interface\AddOns\'
+$downloadgrab = ((Invoke-WebRequest -Uri  | Where href -like '/downloads/elvui-*.zip').href
+$downloadgrab2 = (
+Start-Sleep -s 2
+Start-BitsTransfer -Source $downloadgrab2 -Destination ($wowfolder+'\tmp\elvui.zip')
+Expand-Archive -LiteralPath ($wowfolder+\tmp\elvui.zip )-DestinationPath ($wowfolder+$interfacefolder) -Force
+Add-Content -LiteralPath ($wowfolder+$interfacefolder+'ElvUi\media\SharedMedia.lua') -Value 'LSM:Register(font,Ubuntu, [[Interface\AddOns\ElvUI\media\fonts\Ubuntu-R.ttf]])'"
+"*oa3 file"
+"*size its litterly your best option"
+"`Get-Process | Where {$_.Name -eq *office*}`"
+"you can use *X* to just grab Word.exe ect"
+"get-process * | select-object -Product Microsoft Office | kill"
+"Mabey * instead of all but yeah it's a ps command"
+"`Get-ADComputer -Filter *  | Foreach-Object {Invoke-GPUpdate -Computer $_.name -Force -RandomDelayInMinutes 0}`"
+"*ps"
+"*48volts"
+"*allow shutdown"
+"*fstab"
+"$computerrs = get-adcomputer
+for computer in $computers {invoke command {get-computer info -property * | export to google }"
+"*disabled"
+"its free TM*"
+"* wow world pvp"
+"*VM"
+"or `systeminfo /fo csv | convertfrom-csv | select Os*, System*, hotfix* | format-list`"
+"$ErrorActionPreference = SilentlyContinue
+ 
+$path = SOFTWARE\Microsoft\Windows NT\CurrentVersion\Fonts
+ 
+Remove-ItemProperty -Path HKLM:$path -Name OpenSans (TrueType)
+Remove-ItemProperty -Path HKLM:$path -Name Open Sans Bold (TrueType)
+Remove-ItemProperty -Path HKLM:$path -Name Open Sans Bold Italic (TrueType)
+Remove-ItemProperty -Path HKLM:$path -Name Open Sans Extrabold (TrueType)
+Remove-ItemProperty -Path HKLM:$path -Name Open Sans Extrabold Italic (TrueType)
+Remove-ItemProperty -Path HKLM:$path -Name Open Sans Italic (TrueType)
+Remove-ItemProperty -Path HKLM:$path -Name Open Sans Light (TrueType)
+Remove-ItemProperty -Path HKLM:$path -Name Open Sans Light Italic (TrueType)
+Remove-ItemProperty -Path HKLM:$path -Name Open Sans Semibold (TrueType)
+Remove-ItemProperty -Path HKLM:$path -Name Open Sans (TrueType)
+Remove-ItemProperty -Path HKLM:$path -Name Open Sans Semibold Italic (TrueType)
+start-sleep 10
+ 
+dir *.ttf | %{
+(New-Object -ComObject Shell.Application).Namespace(0x14).CopyHere($_.fullname)
+}"
+"`Get-Mailbox -ResultSize Unlimited -filter <String> | select-object * | export-csv -append"
+"get-aduser -filter {EmailAddress -not like *} -Properties Name,EmailAddress"
+"$users = get-aduser -filter {EmailAddress -not like *} -Properties Name,EmailAddress | Select-object Name
+for $user in $users {Get-mailbox -Identity $user | Select-object Name,Alias | export-csv CSVNAME -Append}"
+"*ucs"
+"*box"
+"*git"
+"Device         Boot  Start      End  Sectors  Size Id Type
+/dev/mmcblk0p1 *      2048   526335   524288  256M  c W95 FAT32 (LBA)
+/dev/mmcblk0p2      526336 62333918 61807583 29.5G 83 Linux"
+"`get-aduser -identity $user -Properties *`"
+"*drives"
+"*training"
+"`get-mailuser -name * | export-csv outfile`"
+"*dose best kit harrington impression*"
+"`Get Dynamics 365 solutions free of charge for up to 6 months to enable COVID-19 responses*`"
+"*both you just chose which dose which"
+"*iana has them registered"
+"*non liner"
+"Get-ItemProperty FILENAME | select-object -Property *"
+"PS C:\Users\USER> Get-Item .\SDM-2.5-1721-c1700-advsecurityk9-mz.123-13.bin | select-object -Property *
+
+
+PSPath            : Microsoft.PowerShell.Core\FileSystem::C:\Users\USER\SDM-2.5-1721-c1700-advsecurityk9-mz.123-13.bin
+PSParentPath      : Microsoft.PowerShell.Core\FileSystem::C:\Users\USER
+PSChildName       : SDM-2.5-1721-c1700-advsecurityk9-mz.123-13.bin
+PSDrive           : C
+PSProvider        : Microsoft.PowerShell.Core\FileSystem
+PSIsContainer     : False
+Mode              : -a----
+VersionInfo       : File:             C:\Users\USER\SDM-2.5-1721-c1700-advsecurityk9-mz.123-13.bin
+                    InternalName:
+                    OriginalFilename:
+                    FileVersion:
+                    FileDescription:
+                    Product:
+                    ProductVersion:
+                    Debug:            False
+                    Patched:          False
+                    PreRelease:       False
+                    PrivateBuild:     False
+                    SpecialBuild:     False
+                    Language:
+
+BaseName          : SDM-2.5-1721-c1700-advsecurityk9-mz.123-13
+Target            : {}
+LinkType          :
+Name              : SDM-2.5-1721-c1700-advsecurityk9-mz.123-13.bin
+Length            : 1061
+DirectoryName     : C:\Users\USER
+Directory         : C:\Users\USER
+IsReadOnly        : False
+Exists            : True
+FullName          : C:\Users\USER\SDM-2.5-1721-c1700-advsecurityk9-mz.123-13.bin
+Extension         : .bin
+CreationTime      : 26/12/2015 01:20:53
+CreationTimeUtc   : 26/12/2015 01:20:53
+LastAccessTime    : 14/10/2017 20:13:29
+LastAccessTimeUtc : 14/10/2017 19:13:29
+LastWriteTime     : 17/10/2011 00:43:27
+LastWriteTimeUtc  : 16/10/2011 23:43:27
+Attributes        : Archive, NotContentIndexed"
+"`Get-ADComputer -Properties * | FT Name, LastLogonDate`"
+"can always do get-appxpackage * | remove-appxpackage"
+"*multipath input output"
+"*ideal"
+"`wmic path softwarelicensingservice get OA3xOriginalProductKey
+
+or
+
+powershell (Get-WmiObject -query select * from SoftwareLicensingService).OA3xOriginalProductKey
+
+`"
+"*script"
+"24hours *365 days"
+"`$Credentials= Get-Credential
+.\Remove-DuplicateItems.ps1 -Identity olrik@office365tenant.com -Server outlook.office365.com -Credentials $Credentials
+-IncludeFolders '#Inbox#','Archive*' -ExcludeFolders '#Inbox#'` for a specific folder"
+"`Get-DfsrState -ComputerName SRV02 | Format-Table FileName,UpdateState,Inbound,Source* -Auto -Wrap`"
+"`In Intune, select Apps > All apps > Add.
+Select Windows 10 in the Microsoft 365 Apps section of the Select app type pane.
+Click Select. The Add app steps are displayed.
+Confirm the default details in the App suite information page.
+Click Next to display the Configure app suite page.
+Next to Update Channel select Monthly from the dropdown box.
+Confirm the remaining default details in the *Configure app suite page.
+Click Next to display the Scope tags page.
+Click Select scope tags to optionally add scope tags for the app. For more information, see Use role-based access control (RBAC) and scope tags for distributed IT.
+Click Next to display the Assignments page.
+Select the group assignments for the app. For more information, see Add groups to organize users and devices.
+Click Next to display the Review + create page. Review the values and settings you entered for the app.
+When you are done, click Create to add the app to Intune.`"
+"*.db"
+"`> burkesys.net
+Server:  one.one.one.one
+Address:  1.1.1.1
+
+*** one.one.one.one can't find burkesys.net: Non-existent domain
+> dns.burkesys.net
+Server:  one.one.one.one
+Address:  1.1.1.1
+
+*** one.one.one.one can't find dns.burkesys.net: Non-existent domain
+>`"
+"`Import-Module BitsTransfer
+$Source=lond-rep01\share\
+$Destination=c:\tmp\
+if ( -Not (Test-Path $Destination))
+{
+$null = New-Item -Path $Destination -ItemType Directory
+}
+$folders = Get-ChildItem -Name -Path $source -Directory -Recurse
+$bitsjob = Start-BitsTransfer -Source $Source\*.* -Destination $Destination -asynchronous -Priority low
+while( ($bitsjob.JobState.ToString() -eq 'Transferring') -or ($bitsjob.JobState.ToString() -eq 'Connecting') )
+{
+Sleep 4
+}
+Complete-BitsTransfer -BitsJob $bitsjob
+foreach ($i in $folders)
+{
+$exists = Test-Path $Destination\$i
+if ($exists -eq $false) {New-Item $Destination\$i -ItemType Directory}
+$bitsjob = Start-BitsTransfer -Source $Source\$i\*.* -Destination $Destination\$i -asynchronous -Priority low
+while( ($bitsjob.JobState.ToString() -eq 'Transferring') -or ($bitsjob.JobState.ToString() -eq 'Connecting') )
+{
+Sleep 4
+}
+Complete-BitsTransfer -BitsJob $bitsjob
+}`"
+"*ldap"
+"* -SearchBase OU=Finance,OU=UserAccounts,DC=FABRIKAM,DC=COM | select-object -expandproperty * | ft auto"
+"*nslookup"
+"*usally* but yes your right traffic it could be DC to DC"
+"`$users = get-user *
+$photo = C:\Users\Administrator\Desktop\PaulCannon.jpg
+for $user in $users {
+ try{ Set-UserPhoto -Identity Paul Cannon -PictureData ([System.IO.File]::ReadAllBytes($photo))}
+}
+catch {}`"
+"`cd /d % windir% \System32\Wbem
+net stop winmgmt
+
+winmgmt /clearadap
+winmgmt /kill
+winmgmt /unregserver
+winmgmt /regserver
+winmgmt /resyncperf
+
+del % windir% \System32\Wbem\Repository /Q
+del % windir% \System32\Wbem\AutoRecover /Q
+
+for % % i in (* .dll) do Regsvr32 -s % % i
+for % % i in (* .mof, * .mfl) do Mofcomp % % i
+wmiadap.exe /Regsvr32
+wmiapsrv.exe /Regsvr32
+wmiprvse.exe /Regsvr32
+
+net start winmgmt
+ ` is how you rebuild it"
+"*could be worng"
+"`    $user = Get-ADUser -Server [AD SERVER] -Identity $inputbox.Text -Properties *` << pretty sure its this"
+"should `    $user = Get-ADUser -Server $ADSERVER -Identity $inputbox.Text -Properties *"
+"so you cant get anything to work with *.mydns.com"
+"*file"
+"*call"
+"*csv"
+"`get-aduser * | select-object * | export-clixml  <OUTFILE>`"
+"`$wowfolder = 'C:\'
+$interfacefolder ='\_retail_\Interface\AddOns\'
+$downloadgrab = ((Invoke-WebRequest -Uri  | Where href -like '/downloads/elvui-*.zip').href
+$downloadgrab2 = (
+Start-Sleep -s 2
+Start-BitsTransfer -Source $downloadgrab2 -Destination ($wowfolder+'\tmp\elvui.zip')
+Expand-Archive -LiteralPath ($wowfolder+\tmp\elvui.zip )-DestinationPath ($wowfolder+$interfacefolder) -Force
+Add-Content -LiteralPath ($wowfolder+$interfacefolder+'ElvUi\media\SharedMedia.lua') -Value 'LSM:Register(font,Ubuntu, [[Interface\AddOns\ElvUI\media\fonts\Ubuntu-R.ttf]])'`"
+"`$downloadgrab = ((Invoke-WebRequest -Uri  | Where href -like '/downloads/elvui-*.zip').href
+$downloadgrab2 = (
+Start-Sleep -s 2
+Start-BitsTransfer -Source $downloadgrab2 -Destination ($wowfolder+'\tmp\elvui.zip')` <<< is the importnat bit"
+"*only very recently though. like last 2 months"
+"so do `get-aduser * | select-object * | ft | export-csv`"
+"`Get-ADUser -identity username -property *`"
+"* is usally the switch for all"
+"so you prob want `get-aduser -Name * |"
+"`cat /etc/os-release
+yum install bind-utils
+
+systemctl stop postfix.service
+systemctl disable postfix.service
+systemctl mask postfix.service
+setenforce 0
+ sed -i 's/^SELINUX=.*/SELINUX=disabled/g' /etc/selinux/config && cat /etc/selinux/config
+yum install -y epel-release
+cd /tmp
+yum install wget
+wget 
+tar xvf iRedMail-1.3.1.tar.gz
+cd iRedMail-1.3.1/`"
+"`For institutions purchasing individual licenses, the annual MRSP is:
+
+42/user/year for faculty and staff
+
+42/user/year for students
+
+For institutions purchasing licenses for all faculty and staff, well offer a promotional price:
+
+42 21/user/year for faculty and staff
+
+Free for eligible students*
+
+**G Suite Enterprise for Education licenses will be free for students if the following conditions are met:
+
+The faculty/staff-to-student ratio of licensing must be 1:10 or less.
+As long as all faculty and staff continue to have G Suite Enterprise for Education accounts.`"
+"`
+PS C:\Users\ > get-childitem | select-object -property * | fl
+
+
+PSPath            : Microsoft.PowerShell.Core\FileSystem::C:\Users\ \.android
+PSParentPath      : Microsoft.PowerShell.Core\FileSystem::C:\Users\ 
+PSChildName       : .android
+PSDrive           : C
+PSProvider        : Microsoft.PowerShell.Core\FileSystem
+PSIsContainer     : True
+Mode              : d-----
+BaseName          : .android
+Target            : {}
+LinkType          :
+Name              : .android
+FullName          : C:\Users\ \.android
+Parent            :  
+Exists            : True
+Root              : C:\
+Extension         : .android
+CreationTime      : 08/07/2020 19:18:02
+CreationTimeUtc   : 08/07/2020 18:18:02
+LastAccessTime    : 30/10/2020 18:05:46
+LastAccessTimeUtc : 30/10/2020 18:05:46
+LastWriteTime     : 08/07/2020 19:18:03
+LastWriteTimeUtc  : 08/07/2020 18:18:03
+Attributes        : Directory, NotContentIndexed`"
+"`$computers = get-adcomputer *
+for $compter in $computers {invoke-command -computer $computer -scirptblock {ipconfig /flushdns}}`"
+"ok first thing add hyper-v to your desktop via powershell with admin perms
+`Install-WindowsFeature -Name Hyper-V -ComputerName <computer_name> -IncludeManagementTools -Restart`
+then install rsat tools with
+`Get-WindowsCapability -Name RSAT* -Online | Add-WindowsCapability -Online`"
+"`Get-WindowsCapability -Name RSAT* -Online | Add-WindowsCapability -Online                                                                                                                                                                                                                                                                       Path          :                                                                                                         Online        : True                                                                                                    RestartNeeded : False                                                                                                                                                                                                                           Path          :                                                                                                         Online        : True                                                                                                    RestartNeeded : False                      `"
+"`$Computers =  Get-ADComputer  -Filter {(enabled -eq true) -and (OperatingSystem -Like *XP*)} | Select-Object -ExpandProperty Name
+$output=@()
+ForEach($PSItem in $Computers) {
+$User = Get-CimInstance Win32_ComputerSystem -ComputerName $PSItem | Select-Object -ExpandProperty UserName
+$Obj = New-Object -TypeName PSObject -Property @{
+        Computer = $PSItem
+        User = $User
+    }
+$output+=$Obj    
+}`
+
+tells you where users are logged on"
+"`$Computers =  Get-ADComputer  -Filter {(enabled -eq true) -and (OperatingSystem -Like *XP*)} | Select-Object -ExpandProperty Name
+$output=@()
+ForEach($PSItem in $Computers) {
+$User = Get-CimInstance Win32_ComputerSystem -ComputerName $PSItem | Select-Object -ExpandProperty UserName
+$Obj = New-Object -TypeName PSObject -Property @{
+        Computer = $PSItem
+        User = $User
+    }
+$output+=$Obj    
+}`"
+"Get-CimInstance -ClassName Win32_Battery | Select-Object -ExpandProperty *"
+"DISM.exe /Online /add-Capabilities /CapabilityName:Rsat*"
+"*netstack"
+"`query-source ( ( [ address ] ( <ipv4_address> | * ) [ port (
+          <integer> | * ) ] ) | ( [ [ address ] ( <ipv4_address> | * ) ]
+          port ( <integer> | * ) ) ) [ dscp <integer> ];
+      query-source-v6 ( ( [ address ] ( <ipv6_address> | * ) [ port (
+          <integer> | * ) ] ) | ( [ [ address ] ( <ipv6_address> | * ) ]
+          port ( <integer> | * ) ) ) [ dscp <integer> ];`"
+"with powershell `Get-WindowsCapability -Online | ? Name -like 'OpenSSH*'`
+`Add-WindowsCapability -Online -Name OpenSSH.Server~~~~0.0.1.0`"
+"*raidz"
+"*what you polling on rather"
+"`Get-WindowsCapability -online | ? Name -like 'OpenSSH*'`"
+"`Get-ADComputer -LDAPFilter (name=*laptop*) -SearchBase CN=Computers,DC= User01,DC=com`"
+"*extension"
+"`Get-VM VMname * | Set-VM AutomaticStartAction Start`"
+"`-ContentFilter Subject -like '*meeting*'`"
+"this one still says use * for range of ips"
+"`get-process -Name *whatyouwant* | stop-process `is more specfic"
+"its bascialy linux `kill *`"
+"`get-process -Name *chrome* | stop-process`"
+"the `*` are wildcards for whatever after or befor3e"
+"on your win10 machine `    
+Get-WindowsCapability -Name RSAT* -Online | Add-WindowsCapability -Online`"
+"(Get-WmiObject -query &apos;select * from SoftwareLicensingService&apos;).OA3xOriginalProductKey"
+"*"
+"`#My Results
+52 (-Filter *.exe)
+1666 (Total with no filter)`"
+"so -filter * eliminates all results"
+"`Get-ADUser username -Properties * | Select * | export-csv OUTFILE`"
+"is this the correct santax for linux home enviroment varible?
+`Include HOME/.ssh/ssh_config.d/*.conf`"
+"the path is include /etc/ssh/ssh_config.d*.conf"
+"so you put the 
+`include ./.ssh/ssh_config.d/*.config`"
+"`~/.ssh$ cat config
+include ~/.ssh/ssh_config.d/*.config`"
+"correction *rwz file"
+"`.videoWrapper {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  height: 0;
+}
+.videoWrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}`"
+"`$wowfolder = 'C:\games\Blizzard\World of Warcraft'
+$interfacefolder ='\_retail_\Interface\AddOns\'
+$downloadgrab = ((Invoke-WebRequest -Uri  | Where href -like '/downloads/elvui-*.zip').href
+$downloadgrab2 = (
+Start-Sleep -s 2
+Start-BitsTransfer -Source $downloadgrab2 -Destination ($wowfolder+'\tmp\elvui.zip')
+Expand-Archive -LiteralPath ($wowfolder+\tmp\elvui.zip )-DestinationPath ($wowfolder+$interfacefolder) -Force
+Add-Content -LiteralPath ($wowfolder+$interfacefolder+'ElvUi\media\SharedMedia.lua') -Value 'LSM:Register(font,Ubuntu, [[Interface\AddOns\ElvUI\media\fonts\Ubuntu-R.ttf]])'`"
+"Where href -like '/downloads/elvui-*.zip').href < this part"
+"*oobe"
+"*microsoft authenticaotr"
+"`^\+((?:9[679]|8[035789]|6[789]|5[90]|42|3[578]|2[1-689])|9[0-58]|8[1246]|6[0-6]|5[1-8]|4[013-9]|3[0-469]|2[70]|7|1)(?:\W*\d){0,13}\d$` to match vaild intenrational number"
+"winget update *
+ done"
+"*1360 Yen per month"
+"*ovh"
+"*own line"
+"*stigs"
+"*Dev environment"
+"select * from *"
+"Rm * -rf"
+"*else"
+"kWh is energy because its power*time"
+"*lxc"
+"sql
+CREATE TABLE Tb_Paitent(
+    paitent_name varchar(50) NOT NULL,);
+ALTER TABLE Tb_Paitent
+add constraint chk_exclude_specail
+check (REGEXP_LIKE(paitent_name,'/^[a-zA-Z\s]*$/'))"
+"well where you call `unquie` as a *constraint"
+"*dope"
+"switch -Wildcard ('Condition')
+{ 
+    'Condition'           {'Normal match'}
+    'Condit*'             {'Zero or more wildcard chars.'} 
+    'C[aoc]ndit[f-l]on'   {'Range and set of chars.'}  
+    'C?ndition'           {'Single char. wildcard'}
+    'Test*'               {'No match'} 
+}"
+"*1 hour"
+"assuming test is what your looking for  echo atestb | sed 's/.*\(test\).*/\1/'"
+"*checks the spreadheet"
+"The account that you use to install Exchange requires the following permissions:*:
+
+Enterprise Admins group membership: Required if this is the first Exchange server in the organization.
+
+Schema Admins group membership: Required if you haven't previously extended the Active Directory schema or prepared Active Directory for Exchange.
+
+Exchange Organization Management role group membership: Required if you've already prepared the Active Directory domain that will contain the Exchange server, or if other Exchange servers already exist in the organization.
+
+* Members of the Delegated Setup role group can install Exchange on servers that have already been provisioned in Active Directory by an Exchange administrator. For more information, see Delegate the installation of Exchange servers.
+
+"
+"$proc = -Name *teams*,*edge*"
+"*#_4&# Else isn't recongised the hell is going on"
+"*mpio"
+"select * from Win32_Processor"
+"silent cmd msiexec.exe /i c:\setup.msi /QN /L*V C:\Temp\msilog.log roughly"
+"Single Loss Expectancy (SLE) = Asset Value (AV) * Exposure Factor (EF"
+"for example 
+powershell
+$comptuer = get-adcomptuer -name *
+$path = pathhere
+$outfile = outfile
+$script = (get-childitem -recurse -Path $path | out-file -Path $outfile -Append)
+for each ($computer in $computers) { invoke-command -computer $computer -scriptblock $script)
+"
+"``Get-ADComputer -LDAPFilter (name=*laptop*) -SearchBase CN=Computers,DC= User01,DC=com``"
+"SW1#show version 
+Cisco IOS Software, C2960 Software (C2960-LANBASEK9-M), Version 15.0(2)SE4, RELEASE SOFTWARE (fc1)
+Technical Support: 
+Copyright (c) 1986-2013 by Cisco Systems, Inc.
+Compiled Wed 26-Jun-13 02:49 by mnguyen
+
+ROM: Bootstrap program is C2960 boot loader
+BOOTLDR: C2960 Boot Loader (C2960-HBOOT-M) Version 12.2(25r)FX, RELEASE SOFTWARE (fc4)
+
+Switch uptime is 39 minutes
+System returned to ROM by power-on
+System image file is flash:c2960-lanbasek9-mz.150-2.SE4.bin
+
+This product contains cryptographic features and is subject to United
+....
+
+cisco WS-C2960-24TT-L (PowerPC405) processor (revision B0) with 65536K bytes of memory.
+Processor board ID FOC1010X104
+Last reset from power-on
+1 Virtual Ethernet interface
+24 FastEthernet interfaces
+2 Gigabit Ethernet interfaces
+The password-recovery mechanism is enabled.
+
+64K bytes of flash-simulated non-volatile configuration memory.
+Base ethernet MAC Address : 00:17:59:A7:51:80
+Motherboard assembly number : 73-10390-03
+Power supply part number : 341-0097-02
+Motherboard serial number : FOC10093R12
+Power supply serial number : AZS1007032H
+Model revision number : B0
+Motherboard revision number : B0
+Model number : WS-C2960-24TT-L
+System serial number : FOC1010X104
+Top Assembly Part Number : 800-27221-02
+Top Assembly Revision Number : A0
+Version ID : V02
+CLEI Code Number : COM3L00BRA
+Hardware Board Revision Number : 0x01
+
+
+Switch Ports Model SW Version SW Image
+------ ----- ----- ---------- ----------
+* 1 26 WS-C2960-24TT-L 15.0(2)SE4 C2960-LANBASEK9-M
+
+
+Configuration register is 0xF"
+"*image"
+"*yup"
+"*die"
+"*qemu"
+"select * from Win32_OperatingSystem where Version like 10.% and ProductType=1"
+"*.domain.com is the wildcards"
+"yeah java dosnt search sub directorys when using * wildcards for imports"
+"`select * from Win32_OperatingSystem where Version like 1% and ProductType=1`"
+"so everything in this dir >>> `Include /etc/ssh/sshd_config.d/*.conf`"
+"so yeah not much is relevent in ssh_config
+
+except 
+`
+Include /etc/ssh/ssh_config.d/*.conf` is there again"
+"`function Replicate-AllDomainController {
+(Get-ADDomainController -Filter *).Name | Foreach-Object {repadmin /syncall $_ (Get-ADDomain).DistinguishedName /e /A | Out-Null}; Start-Sleep 10; Get-ADReplicationPartnerMetadata -Target $env:userdnsdomain -Scope Domain | Select-Object Server, LastReplicationSuccess
+}`"
+"`Ethernet 3                Speed & Duplex                 Auto Negotiation               *SpeedDuplex    {0}` for example"
+"*paid"
+"get-package -name NAMEHERE* | remove-pacakge"
+"*ago"
+"*Site"
+"Get-ADGroup -filter *"
+"`Get-ADUser -Filter * -Properties CannotChangePassword -SearchBase DC=mydomain,DC=com| where {$_.CannotChangePassword} | sort-object {$_.samAccountName} | Select samAccountName`"
+"powershell
+Get-ADUser -Identity GarySmith -Properties *"
+"*.yourdomain.com"
+"`sudo find / -name libstdc++.so.8*` ?"
+"`Get-DfsrState -ComputerName SRV02 | Format-Table FileName,UpdateState,Inbound,Source* -Auto -Wrap`
+`Get-DfsReplicationGroup -GroupName * -IncludeSysvol`"
+"Include /etc/ssh/sshd_config.d/*.conf
+
+#Port 22 <<< this
+#AddressFamily any <<<< this
+#ListenAddress 0.0.0.0 <<<< this
+#ListenAddress :: <<<<this`"
+"via 
+clear ip dhcp bindings *"
+"*market cap"
+"`Select * FROM Win32_ComputerSystem WHERE ((Name LIKE Room-PC%) OR (Name LIKE Room-Laptop%))`"
+"yeah it *somewhere* in the gpo refrence"
+"
+10.1.2.254 configured, insane, invalid, stratum 1
+ref ID .GPS., time D3696D3D.BBB4FF24 (02:30:21.733 UTC Fri May 25 2012)
+our mode client, peer mode server, our poll intvl 64, peer poll intvl 64
+root delay 0.00 msec, root disp 4.15, reach 1, sync dist 15879.654
+delay 0.98 msec, offset 11.9876 msec, dispersion 15875.02
+precision 2**19, version 3
+org time D3696D3D.E4C253FE (02:30:21.893 UTC Fri May 25 2012)
+rcv time D3696D3D.E1D0C1B9 (02:30:21.882 UTC Fri May 25 2012)
+xmt time D3696D3D.E18A748D (02:30:21.881 UTC Fri May 25 2012)
+filtdelay =     0.98    0.00    0.00    0.00    0.00    0.00    0.00    0.00
+filtoffset =   11.99    0.00    0.00    0.00    0.00    0.00    0.00    0.00
+filterror =     0.02 16000.0 16000.0 16000.0 16000.0 16000.0 16000.0 16000.0"
+"*.microsoft.* would be a pretty decent pattern match"
+"(.*company.com|.*company.net)"
+"you need to add * after the first ."
+"so its . * company.com but discord formatting being weird"
+"as your matching *company.com that way"
+"To convert the regular expression to KQL query for sender<>(.*company.com|.*company.net), you can use the following query:
+
+sender:!(company.com OR company.net)
+Copy
+This query will return all messages where the sender is not from company.com or company.net.
+
+I hope that helps!
+
+"
+"``Get-WmiObject -query `select * from SoftwareLicensingService' | Select OA3xOriginalProductKey``
+
+thats for stuff with embded keys"
+"its needs that flood fill or A*"
+"eigrp is A* btw"
+"whitelist all of *.microsoft.com
+and *office.com you should be fine"
+"wosrt comesto the worse it rejects E: so you go with the wildcard call of e:\*"
+"*docsis 3"
+"*190mph"
+"`1,584.00 per month *12 =19008 ` i am assuming minum wage is a 36-40 hour week"
+"`get-childitem -include * | Select-Object -ExpandProperty all`"
+"*interesting"
+"*binary"
+"usally due to *knowing more shit than the staff about sysadmin*"
+"then youdo `Get-NetNeighbor -AddressFamily ipv6 * | Where-Object { $_.LinkLayerAddress -ne '00-00-00-00-00-00' -and $_.LinkLayerAddress -notlike '33-33-*' }`"
+"then type ``Get-NetNeighbor -AddressFamily ipv6 * | Where-Object { $_.LinkLayerAddress -ne '00-00-00-00-00-00' -and $_.LinkLayerAddress -notlike '33-33-*' }``"
+"**Hand waves ** in general"
+"`> google.com
+Server:  star.c10r.facebook.com
+Addresses:  2a03:2880:f053:11:face:b00c:0:2
+          157.240.200.16
+Aliases:  dns.facebook.com
+
+*** star.c10r.facebook.com can't find google.com: No response from server`"
+"*mailbox folders"
+"honestly this is why i use json instead of uaml for docker
+json
+{
+   Version: 3.8,
+   services: {
+      db1: {
+         image: mysql:latest,
+         volumes: [
+            ./wordpress/db1/data:/var/lib/mysql
+         ],
+         restart: always,
+         environment: {
+            MYSQL_ROOT_PASSWORD: PasswordOfGreatness,
+            MYSQL_DATABASE: wp_db1,
+            MYSQL_USER: wp1_user,
+            MYSQL_PASSWORD: NotSoGreatPassword
+         }
+      },
+      wordpress1: {
+         image: wordpress:latest,
+         depends_on: [
+            db1
+         ],
+         build: null,
+         FROM wordpress: null,
+         RUN: \n-- apt-get update \n-- apt-get install -y libldap2-dev \n-- rm -rf /var/lib/apt/lists/* \n-- docker-php-ext-configure ldap --with-libdir=lib/x86_64-linux-gnu/ \n-- docker-php-ext-install ldap \n-- apt-get purge -y --auto-remove libldap2-dev,
+         volumes: [
+            ./wordpress/site1/wp-content:/var/www/html/wp-content,
+            ./wordpress/uploads.ini:/user/local/etc/php/conf.d/uploads.ini
+         ],
+         ports: [
+            8880:80
+         ],
+         restart: always,
+         environment: {
+            WORDPRESS_DB_HOST: db1:3306,
+            WORDPRESS_DB_NAME: wp_db1,
+            WORDPRESS_DB_USER: wp1_user,
+            WORDPRESS_DB_PASSWORD: NotSoGreatPassword
+         }
+      }
+   },
+   networks: {
+      dockerwp: {
+         name: dockerwp,
+         external: true
+      }
+   }
+}"
+"*andriod"
+"Will cost you 35*12*60"
+"most likey its the use .*"
+"Turns out eigrp is a*"
+"Honestly I wish bgp used a*"
+"As everyone knows a* is superior to plain dj"
+"Thank you * taking notes *"
+"*gpu"
+"*ship"
+"*jetbrains"
+"*limit"
+"*rtsp"
+"*openflow"
+"*script"
+"*server"
+"* for azure the equivalent for windows guests iscustom data"
+"powershell
+function Get-ItemSize {
+    [CmdletBinding()]
+    param(
+        [alias(FullName,Path)]
+        [Parameter(ValueFromPipeLineByPropertyName=$true, ValueFromPipeline=$true, Position=0)]
+        [string[]]$paths = (Get-Location)
+    )
+
+    process {
+        try {
+            $clusterSizeTable = $clusterSizeTable ?? (Get-Volume | Select-Object DriveLetter, AllocationUnitSize | Where-Object DriveLetter)
+
+            foreach ($path in $paths) {
+                $item = Get-Item $path -ErrorAction Stop | Select-Object FullName, Name, Length, PSIsContainer
+                $isContainer = $item.PSIsContainer
+                $clusterSize = $clusterSizeTable | Where-Object DriveLetter -eq ((Split-Path -Qualifier $item.FullName) -replace ':') | Select-Object -First 1 -ExpandProperty AllocationUnitSize
+
+                $childrenStats = if ($isContainer) {
+                    $children = Get-ChildItem (Join-Path $item.FullName '\*') -Force -Recurse | Select-Object FullName
+                    $children | Get-ItemSize
+                } else {
+                    @()
+                }
+
+                [pscustomobject]@{
+                    Name = $item.Name
+                    Path = $item.FullName
+                    Type = if ($isContainer) { Directory } else { File }
+                    Size = bigint.Sum : $item.Length)
+                    SizeOnDisk = bigint.Sum : ([math]::Ceiling($item.Length / $clusterSize) * $clusterSize))
+                    ChildrenCount = if ($isContainer) { $children.Count } else { -1 }
+                }
+            }
+        } catch {
+            Write-Error -Message An error occurred processing path: $_. Exception: $($_.Exception.Message)
+        }
+    }
+}
+"
+"powershell
+function Get-ItemSize {
+    [CmdletBinding()]
+    param(
+        [alias(FullName,Path)]
+        [Parameter(ValueFromPipeLineByPropertyName=$true, ValueFromPipeline=$true, Position=0)]
+        [string[]]$paths = (Get-Location)
+    )
+
+    process {
+        try {
+            if ($null -eq $clusterSizeTable) {
+                $clusterSizeTable = Get-Volume | Select-Object DriveLetter, AllocationUnitSize | Where-Object DriveLetter
+            }
+
+            foreach ($path in $paths) {
+                $item = Get-Item $path -ErrorAction Stop | Select-Object FullName, Name, Length, PSIsContainer
+                $isContainer = $item.PSIsContainer
+                $clusterSize = $clusterSizeTable | Where-Object DriveLetter -eq ((Split-Path -Qualifier $item.FullName) -replace ':') | Select-Object -First 1 -ExpandProperty AllocationUnitSize
+
+                $childrenStats = if ($isContainer) {
+                    $children = Get-ChildItem (Join-Path $item.FullName '\*') -Force -Recurse | Select-Object FullName
+                    $children | Get-ItemSize
+                } else {
+                    @()
+                }
+
+                [pscustomobject]@{
+                    Name = $item.Name
+                    Path = $item.FullName
+                    Type = if ($isContainer) { Directory } else { File }
+                    Size = $item.Length
+                    SizeOnDisk = [math]::Ceiling($item.Length / $clusterSize) * $clusterSize
+                    ChildrenCount = if ($isContainer) { $children.Count } else { -1 }
+                }
+            }
+        } catch {
+            Write-Error -Message An error occurred processing path: $_. Exception: $($_.Exception.Message)
+        }
+    }
+}"
+"powershell
+# Define the source directory containing the text files
+$sourceDirectory = C:\Path\To\Your\Source\Directory
+
+# Define the destination directory on each remote computer
+$destinationComputers = @(Computer1, Computer2, Computer3, Computer4, Computer5)
+$destinationDirectory = C:\Temp  # Change this to the desired destination path on the remote computers
+
+# Specify the file extension you want to copy (e.g., .txt)
+$fileExtension = *.txt
+
+# Loop through each destination computer and copy the files
+foreach ($computer in $destinationComputers) {
+    $destinationPath = $computer\$destinationDirectory
+    Write-Host Copying files to $destinationPath
+    Robocopy $sourceDirectory $destinationPath $fileExtension /E /COPYALL /R:3 /W:1 /LOG+:C:\RobocopyLogs\robocopy_log.txt
+}
+
+# Schedule this script to run four times per day using Task Scheduler or another scheduling mechanism
+"
+"*bits background intelligent transfer service"
+"*cable sock"
+"*sparkies"
+"*fryied as they are the ones required to isolate it"
+"*for copper"
+"*dallas keys"
+"*if you pay for it*"
+"*multi chassis link aggregation"
+"*September 29, 2018"
+"with all the * of batter stuff"
+"`#!/bin/bash
+
+# Iterate through all block devices
+for device in /dev/sd*; do
+    # Check if the device is a partition (not the whole disk)
+    if [[ $device != */dev/sd[a-z] ]]; then
+        # Get the filesystem type of the device
+        fs_type=$(blkid -o value -s TYPE $device)
+        # Check if it's the root partition (assuming ext4 filesystem)
+        if [[ $fs_type == ext4 ]]; then
+            echo Root partition found: $device
+            break
+        fi
+    fi
+done`"
+"well `/dev/nvme*`"
+"bash
+#!/bin/bash
+
+# Iterate through all block devices
+for device in /dev/sd*; do
+    # Check if the device is a partition (not the whole disk)
+    if [[ $device != */dev/sd[a-z] ]]; then
+
+        # Check if it's the root partition
+        mount_point=$(lsblk -o MOUNTPOINT -n $device)
+        if [[ $mount_point == / ]]; then
+            echo Root partition found: $device
+            break
+        elif [[ $mount_point == /boot ]]; then
+            echo Boot partition found: $device
+        elif [[ $mount_point == SWAP* ]]; then
+            echo Swap partition found: $device
+        else
+            echo Unknown partition found: $device
+        fi
+    fi
+done
+"
+"*dns"
+"*mfa"
+"*scipt"
+"nope its a*"
+"anyhow a* which is what EIGRP uses. is the improved version of DJ algorthim"
+"but it baiscaly does weighed paths for path selection on a* algorithm"
+"*OR OTHER ADMIN GROUP"
+"But yeah your talking size*developers for storage"
+"*1944, its a thing in most commenwealth contries"
+"*pay"
+"*fast"
+"*cause he stepped in it"
+"*everyone authenticated"
+"*correction its in winget"
+"*connection symetircal bi-driectional connection iniatation"
+"*cisco modeling labs
+its $200"
+"*17"
+"*takes notes*"
+"** taking notes**"
+"*ceph"
+"*tokens"
+"*labs"
+"python
+def example_function(arg):
+    if not isinstance(arg, int):
+        raise TypeError(Invalid argument: expected an integer)
+    if arg < 0:
+        raise ValueError(Invalid argument: expected a non-negative integer)
+    # Function logic here
+    return arg * 2
+
+try:
+    result = example_function(string)
+except TypeError as e:
+    print(fCaught an exception: {e})
+except ValueError as e:
+    print(fCaught an exception: {e})"
+"*homeographs"
+"*dumb"
+"Instead of you having a mesh network where you have `n * (n - 1) / 2` point to point connections woth their own encryptions"
+"*depends on distance and layout of his building"
+"*rdp"
+"there are about 5 ways to do this but this is the default one
+
+go
+type Person struct {
+    Name    string
+    Age     int
+    Address *string // Optional field
+}
+
+func main() {
+    address := 123 Main St
+    p1 := Person{Name: Alice, Age: 30, Address: &address}
+    p2 := Person{Name: Bob, Age: 25} // Address is nil
+}"
+"my structure
+
+ example.proto
+ go.mod
+ proto
+    example
+    example.proto
+ script.sh
+
+
+protoc --go-grpc_out=. *.proto
+protoc-gen-go-grpc: program not found or is not executable
+Please specify a program using absolute path or make sure the program is available in your PATH system variable
+
+
+
+when i try absoultue path i gives
+
+ protoc --go-grpc_out=. /workspaces/protoc-test/example.proto
+/workspaces/protoc-test/example.proto: File does not reside within any path specified using --proto_path (or -I).  You must specify a --proto_path which encompasses this file.  Note that the proto_path must be an exact prefix of the .proto file names -- protoc is too dumb to figure out when two paths (e.g. absolute and relative) are equivalent (it's harder than you think)."
+"*tech family"
+"and fyi the Host *.internal <<< this is teh alias"
+"*open ssh working before, it should outright drop the connectoinis with the transform set"
+"*fine"
+"*requirer IPsec*"
+"`Constants:
+
+Voltage (V): 20,000 V
+Input frequency (f_in): 50 Hz
+Output frequency (f_out): 60 Hz
+Power factor (PF): 0.85 (typical value)
+Frequency converter efficiency: 98% (typical value)
+Calculations:
+
+Apparent power (S):
+S = V^2 / (2 * pi * f_in) * PF
+S = (20000^2) / (2 * pi * 50) * 0.85
+S = 2164506.4 VA
+
+Power loss (P_loss):
+P_loss = S * (1 - efficiency)
+P_loss = 2164506.4 * (1 - 0.98)
+P_loss = 43290.13 W`"
+"*FEC"
+"*get"
+"*market"
+"*f3 = ms frountline"
+"select * from Win32_OperatingSystem where Version like 10.0.26100% and (ProductType=2 or ProductType=3`"
+"*sd card"
+"*got"
+"*folder"
+"*run at startup"
+"little something out of geminia as an example
+
+python
+from fastapi import FastAPI, HTTPException
+from pydantic import BaseModel
+import torch
+from transformers import AutoModelForSequenceClassification, AutoTokenizer
+
+app = FastAPI()
+
+# Load the pre-trained model and tokenizer
+model_name = bert-base-uncased  # Replace with your desired model
+model = AutoModelForSequenceClassification.from_pretrained(model_name)
+tokenizer = AutoTokenizer.from_pretrained(model_name)
+
+# Define the input and output data structures
+class TextInput(BaseModel):
+    text: str
+
+class PredictionOutput(BaseModel):
+    label: str
+    probability: float
+
+# Define the prediction function
+def predict(text):
+    inputs = tokenizer(text, return_tensors=pt, truncation=True, padding=True)
+    outputs = model(**inputs)
+    logits = outputs.logits
+    predicted_class = torch.argmax(logits, dim=1).item()
+    probs = torch.softmax(logits, dim=1)
+    predicted_prob = probs[0][predicted_class].item()
+
+    # Map predicted class to label (you'll need to define this mapping based on your model)
+    id2label = {0: label1, 1: label2, 2: label3}  # Example mapping
+    predicted_label = id2label[predicted_class]
+
+    return PredictionOutput(label=predicted_label, probability=predicted_prob)
+
+# Define the API endpoint
+@app.post(/predict/, response_model=PredictionOutput)
+async def predict_text(input_data: TextInput):
+    try:
+        prediction = predict(input_data.text)
+        return prediction
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=fAn error occurred: {e})
+
+# Run the server
+if __name__ == __main__:
+    import uvicorn
+    uvicorn.run(app, host=0.0.0.0, port=8000)`"
+"this woudl be its pair in golang
+go
+package main
+
+import (
+        context
+        fmt
+        io
+        log
+        net
+        net/http
+
+        google.golang.org/grpc
+        google.golang.org/grpc/credentials/insecure
+
+        github.com/grpc-ecosystem/grpc-gateway/v2/runtime
+        github.com/grpc-ecosystem/grpc-gateway/v2/utilities
+
+        pb your_proto_package // Replace with your actual proto package
+)
+
+// Define a simple gRPC service
+type server struct{}
+
+func (s *server) Predict(ctx context.Context, in *pb.TextInput) (*pb.PredictionOutput, error) {
+        // 1. Prepare the request for FastAPI
+        reqBody, err := json.Marshal(in)
+        if err != nil {
+                return nil, err
+        }
+
+        // 2. Make HTTP POST request to FastAPI
+        resp, err := http.Post( application/json, bytes.NewBuffer(reqBody))
+        if err != nil {
+                return nil, err
+        }
+        defer resp.Body.Close()
+
+        // 3. Read the response from FastAPI
+        body, err := io.ReadAll(resp.Body)
+        if err != nil {
+                return nil, err
+        }
+
+        // 4. Unmarshal the response into PredictionOutput
+        var out pb.PredictionOutput
+        err = json.Unmarshal(body, &out)
+        if err != nil {
+                return nil, err
+        }
+
+        return &out, nil
+}
+
+func main() {
+        // 1. Start gRPC server
+        lis, err := net.Listen(tcp, :9000)
+        if err != nil {
+                log.Fatalf(failed to listen: %v, err)
+        }
+        s := grpc.NewServer()
+        pb.RegisterPredictionServiceServer(s, &server{})
+        log.Printf(gRPC server listening on :9000)
+        go func() {
+                if err := s.Serve(lis); err != nil {
+                        log.Fatalf(failed to serve: %v, err)
+                }
+        }()
+
+
+}"
+"*intel"
+"*fortunate son*"
+"*if we pay for one that's the only one your allowed to use. Anything else is a data breach"
+"Hisource 4 8 Port 2.5G Ethernet Switch None POE Network Switch with 1*10G SFP Port for IP Camera/CCTV Security i got one of thee was pretty good for $30"
+"*lanes"
+"*zstd"
+"*tool"
+"* CVE-2023-21689, CVE-2023-21690, and CVE-2023-21692, which are all Microsoft PEAP Remote Code Execution Vulnerabilities.
+     * CVE-2023-21701 which is a Microsoft PEAP Denial of Service Vulnerability."
+"frontend www-http
+    bind    *:80 <<< your webserver ddns
+    stats   enable
+    mode    http
+    option  http-keep-alive
+
+    acl portainer   hdr_end(host)   -i portainer.127.0.0.1.xip.io <<<also here
+
+    use_backend     portainer1     if portainer
+    userbackend     portainer2     more here 
+
+backend portainer
+    stats   enable
+    option  forwardfor
+    option  http-keep-alive
+    server  portainer1   127.0.0.1:9000 check
+more backend servers here  <<<
+"
+"usally `=*` means match all"
+"****"
+"*public facing"
+"system32> Get-WindowsCapability -Online | Where-Object Name -like 'OpenSSH*'
+
+
+Name  : OpenSSH.Client~~~~0.0.1.0
+State : Installed
+
+Name  : OpenSSH.Server~~~~0.0.1.0
+State : NotPresent
+
+"
+"*motors, as now the EV motor scaling is now viable"
+"*Renegotiation"
+"should be 
+sudo rm -fr /*"

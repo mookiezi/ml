@@ -1,0 +1,13 @@
+# Ignore all folders
+*/
+
+# But allow the archives folder and its contents
+!archives/
+!models/**
+!drive/**
+!models/
+!drive/
+!archives/**
+
+# Allow files in the root directory (optional)
+!*.*
