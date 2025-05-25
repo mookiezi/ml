@@ -1,4 +1,3 @@
-"cleaned_content"
 "6) invoke-gupdate remotly
 
 Get-ADComputer Filter 'Name -like win7*' -Searchbase ou=test, dc=domr2, dc=com | foreach{ Invoke-GPUpdate Computer $_.name -Force -RandomDelayInMinutes 0}"
