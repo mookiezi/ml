@@ -719,23 +719,25 @@ def generate_text(msg, max_attempts=20):
 
     print(f"No new unique output after {max_attempts} attempts.")
 
-if __name__ == "__main__":
-    generating = False
-    while True:
-        user_input = input("Enter a prompt to start generating or 'q' to exit: ")
-        if user_input.lower() == 'q':
-            print("Exiting...")
-            break
 
-        if not generating:
-            generating = True
-            print("Generation started. Press 'Space' to stop.")
 
-        while generating:
-            generate_text(user_input if user_input.strip() else "<GOOD>")
-            if keyboard.is_pressed('space'):
-                generating = False
-                print("Generation stopped.")
-                break
-
-            time.sleep(0.01)
+#if __name__ == "__main__":
+#    generating = False
+#    while True:
+#        user_input = input("Enter a prompt to start generating or 'q' to exit: ")
+#        if user_input.lower() == 'q':
+#            print("Exiting...")
+#            break
+#
+#        if not generating:
+#            generating = True
+#            print("Generation started. Press 'Space' to stop.")
+#
+#        while generating:
+#            generate_text(user_input if user_input.strip() else "<GOOD>")
+#            if keyboard.is_pressed('space'):
+#                generating = False
+#                print("Generation stopped.")
+#                break
+#
+#            time.sleep(0.01)
