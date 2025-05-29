@@ -405,7 +405,8 @@ def clean_line(line):
     # Replace the specific escaped sequence '\o' with '\\o' to handle potential encoding issues.
     line = line.replace('\\o', '\\\\o')
     # Decode the string, interpreting escaped Unicode characters (e.g., '\u00a0' for non-breaking space).
-    
+    line = bytes(line, "utf-8").decode("unicode_escape")
+
     # Remove markdown-style links where the text is followed immediately by http(s)://...
     line = re.sub(r'\[[^\]]+\]https?://\S*', '', line)
     # Remove markdown-style links with empty link text: [](...)
