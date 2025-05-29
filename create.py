@@ -741,7 +741,7 @@ if __name__ == "__main__":
         generating = True
         print("Generation started. Press 'Space' to stop.")
 
-        with pynput_keyboard.Listener(on_press=on_press) as listener:
+        with keyboard.Listener(on_press=on_press) as listener:
             while generating:
                 generate_text(user_input if user_input.strip() else "<GOOD>")
                 time.sleep(0.01)
