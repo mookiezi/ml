@@ -720,6 +720,34 @@ def generate_text(msg, max_attempts=20):
     print(f"No new unique output after {max_attempts} attempts.")
 
 
+generating = True  # global flag
+
+def on_press(key):
+    global generating
+    try:
+        if key.char == ' ':
+            generating = False
+            print("Generation stopped.")
+            return False
+    except AttributeError:
+        pass
+
+if __name__ == "__main__":
+    while True:
+        user_input = input("Enter a prompt to start generating or 'q' to exit: ")
+        if user_input.lower() == 'q':
+            print("Exiting...")
+            break
+
+        generating = True
+        print("Generation started. Press 'Space' to stop.")
+
+        with pynput_keyboard.Listener(on_press=on_press) as listener:
+            while generating:
+                generate_text(user_input if user_input.strip() else "<GOOD>")
+                time.sleep(0.01)
+
+            listener.join()
 
 #if __name__ == "__main__":
 #    generating = False
