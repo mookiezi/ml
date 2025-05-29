@@ -406,7 +406,11 @@ def clean_line(line):
     line = line.replace('\\o', '\\\\o')
     # Decode the string, interpreting escaped Unicode characters (e.g., '\u00a0' for non-breaking space).
     line = bytes(line, "utf-8").decode("unicode_escape")
-
+    try:
+        line = bytes(line, "utf-8").decode("unicode_escape")
+    except UnicodeDecodeError:
+        # fallback: just keep the original line or remove trailing backslashes
+        line = line.rstrip("\\")
     # Remove markdown-style links where the text is followed immediately by http(s)://...
     line = re.sub(r'\[[^\]]+\]https?://\S*', '', line)
     # Remove markdown-style links with empty link text: [](...)
