@@ -179,9 +179,9 @@ def main():
         tokenizer.add_special_tokens(special_tokens_dict)
         model.resize_token_embeddings(len(tokenizer))
 
-    if tokenizer.pad_token is None:
-        tokenizer.pad_token = tokenizer.eos_token
-        model.resize_token_embeddings(len(tokenizer))
+    #if tokenizer.pad_token is None:
+    #    tokenizer.pad_token = tokenizer.eos_token
+    #    model.resize_token_embeddings(len(tokenizer))
 
     if args.input_method == 1:
         print("Starting from scratch...")
