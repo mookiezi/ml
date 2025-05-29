@@ -691,7 +691,6 @@ def generate_text(msg, max_attempts=20):
             temperature=0.75,
             no_repeat_ngram_size=3,
             repetition_penalty=1.2,
-            early_stopping=True,
             pad_token_id=tokenizer.pad_token_id,
             eos_token_id=tokenizer.eos_token_id
         )
