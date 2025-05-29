@@ -313,7 +313,15 @@ def main():
             batches = (dataset_len // args.batch_size) + (1 if dataset_len % args.batch_size != 0 else 0)
             total_batches += batches
 
-
+        if args.resume_checkpoint:
+            model, tokenizer, optimizer, scheduler, start_epoch = load_checkpoint(device, optimizer, scheduler, args.resume_checkpoint)
+        else:
+            model = AutoModelForCausalLM.from_pretrained(args.model_name).to(device)
+            tokenizer = AutoTokenizer.from_pretrained(args.model_name)
+            optimizer = None
+            scheduler = None
+            start_epoch = 0
+            
         optimizer = torch.optim.AdamW(model.parameters(), lr=args.lr, weight_decay=0.01)
         total_steps = (total_batches // args.accum_steps) * args.epochs
         scheduler = get_linear_schedule_with_warmup(
