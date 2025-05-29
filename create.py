@@ -733,9 +733,9 @@ if __name__ == "__main__":
 
         while generating:
             generate_text(user_input if user_input.strip() else "<GOOD>")
-            # if keyboard.is_pressed('space'):
-            #     generating = False
-            #     print("Generation stopped.")
-            #     break
+            if keyboard.is_pressed('space'):
+                generating = False
+                print("Generation stopped.")
+                break
 
             time.sleep(0.01)
