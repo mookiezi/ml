@@ -317,6 +317,7 @@ def main():
             total_batches += batches
 
         if args.resume_checkpoint:
+            
             model, tokenizer, optimizer, scheduler, start_epoch = load_checkpoint(device, optimizer, scheduler, args.resume_checkpoint)
         else:
             model = AutoModelForCausalLM.from_pretrained(args.model_name).to(device)
