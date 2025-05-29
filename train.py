@@ -313,7 +313,6 @@ def main():
             batches = (dataset_len // args.batch_size) + (1 if dataset_len % args.batch_size != 0 else 0)
             total_batches += batches
 
-        
 
         optimizer = torch.optim.AdamW(model.parameters(), lr=args.lr, weight_decay=0.01)
         total_steps = (total_batches // args.accum_steps) * args.epochs
