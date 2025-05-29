@@ -18,6 +18,9 @@ import argparse  # Import the argparse module
 TYPOS = False
 FILTER_ENABLED = True  # Set to False to disable the message filter
 
+nltk.download('names')
+
+
 # Get the lists of male and female names
 male_names = names.words('male.txt')
 female_names = names.words('female.txt')
