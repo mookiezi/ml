@@ -19,7 +19,7 @@ TYPOS = False
 FILTER_ENABLED = True  # Set to False to disable the message filter
 
 nltk.download('names')
-
+nltk.download('wordnet')
 
 # Get the lists of male and female names
 male_names = names.words('male.txt')
