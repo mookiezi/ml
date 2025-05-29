@@ -313,6 +313,14 @@ def main():
             batches = (dataset_len // args.batch_size) + (1 if dataset_len % args.batch_size != 0 else 0)
             total_batches += batches
 
+        optimizer = torch.optim.AdamW(model.parameters(), lr=args.lr, weight_decay=0.01)
+        total_steps = (total_batches // args.accum_steps) * args.epochs
+        scheduler = get_linear_schedule_with_warmup(
+            optimizer,
+            num_warmup_steps=int(0.1 * total_steps),
+            num_training_steps=total_steps,
+        )
+
         if args.input_method == 4:
             start_file_index = max(0, args.resume_txt_number - 1)
             model, tokenizer, optimizer, scheduler, epoch = load_checkpoint(device, optimizer, scheduler, args.resume_checkpoint)
@@ -320,14 +328,6 @@ def main():
         else:
             start_file_index = 0
             start_epoch = 0
-
-            optimizer = torch.optim.AdamW(model.parameters(), lr=args.lr, weight_decay=0.01)
-            total_steps = (total_batches // args.accum_steps) * args.epochs
-            scheduler = get_linear_schedule_with_warmup(
-                optimizer,
-                num_warmup_steps=int(0.1 * total_steps),
-                num_training_steps=total_steps,
-            )
 
         if optimizer is None:
             optimizer = torch.optim.AdamW(model.parameters(), lr=args.lr, weight_decay=0.01)
