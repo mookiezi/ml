@@ -719,7 +719,6 @@ def generate_text(msg, max_attempts=20):
 
     print(f"No new unique output after {max_attempts} attempts.")
 
-
 generating = True  # global flag
 
 def on_press(key):
