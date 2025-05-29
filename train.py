@@ -252,7 +252,8 @@ def main():
         except IOError as e:
             print(f"Error reading file {args.train_path}: {e}")
             return
-        
+        optimizer = None
+        scheduler = None
         model, tokenizer, optimizer, scheduler, epoch = load_checkpoint(device, device, optimizer, scheduler, args.resume_checkpoint)
 
         max_len = args.max_length if args.max_length else calculate_max_length(lines)
