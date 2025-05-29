@@ -10,7 +10,8 @@ from nltk.corpus import names
 from fuzzywuzzy import fuzz
 from concurrent.futures import ThreadPoolExecutor
 from functools import partial
-import keyboard
+# import keyboard
+from pynput import keyboard
 import time
 import sys
 import argparse  # Import the argparse module
