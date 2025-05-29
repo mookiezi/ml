@@ -146,7 +146,7 @@ def parse_args():
     if not args.train_path:
         if args.input_method in (1, 2):
             args.train_path = input("Enter path to training data file: ").strip()
-        elif args.input_method == 3:
+        elif args.input_method in (3, 4):
             args.train_path = input("Enter path to training data folder: ").strip()
     if args.input_method == 2 and not args.resume_checkpoint:
         args.resume_checkpoint = input("Enter checkpoint path to resume from: ").strip()
