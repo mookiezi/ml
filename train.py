@@ -252,7 +252,7 @@ def main():
         except IOError as e:
             print(f"Error reading file {args.train_path}: {e}")
             return
-
+        
         model, tokenizer, optimizer, scheduler, epoch = load_checkpoint(device, device, optimizer, scheduler, args.resume_checkpoint)
 
         max_len = args.max_length if args.max_length else calculate_max_length(lines)
@@ -317,7 +317,8 @@ def main():
             total_batches += batches
 
         if args.resume_checkpoint:
-            
+            optimizer = None
+            scheduler = None
             model, tokenizer, optimizer, scheduler, start_epoch = load_checkpoint(device, optimizer, scheduler, args.resume_checkpoint)
         else:
             model = AutoModelForCausalLM.from_pretrained(args.model_name).to(device)
